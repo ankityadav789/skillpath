@@ -1,0 +1,59 @@
+.notfound{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+.notfound-card{
+width:700px;
+max-width:100%;
+padding:60px;
+text-align:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:30px;
+box-shadow:0 15px 40px rgba(0,0,0,.4);
+animation:zoom .7s ease;
+}
+.notfound-card h1{
+font-size:140px;
+color:#00f7ff;
+margin-bottom:10px;
+text-shadow:0 0 30px #00f7ff;
+}
+.notfound-card h2{
+font-size:42px;
+margin-bottom:20px;
+}
+.notfound-card p{
+font-size:20px;
+line-height:1.8;
+color:#ddd;
+margin-bottom:40px;
+}
+.notfound-card button{
+padding:18px 45px;
+font-size:18px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+background:#00f7ff;
+font-weight:bold;
+transition:.4s;
+}
+.notfound-card button:hover{
+transform:translateY(-6px);
+box-shadow:0 0 30px #00f7ff;
+}
+@keyframes zoom{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}

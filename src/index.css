@@ -1,0 +1,115 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:
+radial-gradient(circle at top left,#00b4ff33,transparent 40%),
+radial-gradient(circle at bottom right,#7f5cff44,transparent 45%),
+linear-gradient(135deg,#030712,#08172f,#0f1d3d);
+background-size:400% 400%;
+animation:bgMove 18s infinite alternate;
+min-height:100vh;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes bgMove{
+0%{
+background-position:left top;
+}
+100%{
+background-position:right bottom;
+}
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+section{
+padding:80px 8%;
+}
+
+.container{
+width:100%;
+max-width:1400px;
+margin:auto;
+}
+
+.feature-card,
+.glass-card,
+.testimonial-card,
+.contact-card,
+.box {
+position:relative;
+overflow:hidden;
+}
+
+.feature-card::before,
+.glass-card::before,
+.testimonial-card::before,
+.contact-card::before,
+.box::before{
+content:"";
+position:absolute;
+top:-80%;
+left:-80%;
+width:250px;
+height:250px;
+background:rgba(255,255,255,.08);
+transform:rotate(45deg);
+transition:.8s;
+}
+
+.feature-card:hover::before,
+.glass-card:hover::before,
+.testimonial-card:hover::before,
+.contact-card:hover::before,
+.box:hover::before{
+left:120%;
+}
+
+.hero,
+.features,
+.about,
+.contact,
+.testimonial-section,
+.cta{
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+button{
+transition:.35s;
+}
+
+button:hover{
+transform:translateY(-5px);
+}
+
+.section-title,
+.hero span,
+.logo span{
+text-shadow:
+0 0 12px cyan,
+0 0 20px cyan;
+}
