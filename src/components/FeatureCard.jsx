@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./FeatureCard.css";
 
 const features = [
@@ -54,9 +55,11 @@ function FeatureCard() {
 
             <p>{item.desc}</p>
 
-            <button>
-              Learn More →
-            </button>
+            <Link to="/not-found">
+              <button>
+                Learn More →
+              </button>
+            </Link>
 
           </div>
         ))}

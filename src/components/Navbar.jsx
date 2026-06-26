@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
 
@@ -13,9 +13,9 @@ function Navbar() {
       </div>
 
       <div className={menuOpen ? "nav-links active" : "nav-links"}>
-        <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
-        <NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink>
-        <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
 
       <button

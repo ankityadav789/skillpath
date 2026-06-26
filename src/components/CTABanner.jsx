@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CTABanner.css";
 
 function CTABanner() {
@@ -10,9 +11,11 @@ function CTABanner() {
         Join thousands of learners and build your dream career today.
       </p>
 
-      <button>
-        Enroll Now
-      </button>
+      <Link to="/not-found">
+        <button>
+          Enroll Now
+        </button>
+      </Link>
 
     </section>
   );

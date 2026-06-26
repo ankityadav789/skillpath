@@ -33,19 +33,23 @@ line-height:1.8;
 color:#ddd;
 margin-bottom:40px;
 }
-.notfound-card button{
+.notfound-card .back-btn{
+display:inline-block;
 padding:18px 45px;
 font-size:18px;
 border:none;
 border-radius:50px;
 cursor:pointer;
 background:#00f7ff;
+color:#121212;
+text-decoration:none;
 font-weight:bold;
 transition:.4s;
 }
-.notfound-card button:hover{
+.notfound-card .back-btn:hover{
 transform:translateY(-6px);
 box-shadow:0 0 30px #00f7ff;
+color:#121212;
 }
 @keyframes zoom{
 from{

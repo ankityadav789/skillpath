@@ -1,8 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -28,7 +25,7 @@ function App() {
 
     <>
 
-      <Navbar />
+      <ScrollToTop />
 
       <Routes>
 
@@ -41,9 +38,6 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
 
       </Routes>
-
-      <ScrollToTop />
-      <Footer />
 
     </>
 
